@@ -2,6 +2,18 @@
   "posts": [
     {
       "id": 0,
+      "slug": "2026/01/understanding-risk-and-return.html",
+      "title": "Understanding Risk and Return: The Truth 90% of Indians Don't Know (2026)",
+      "excerpt": "Learn why 90.5% of Indians avoid stock markets and miss Rs 16.5 lakh wealth creation. Discover systematic vs unsystematic risk, equity vs FD returns, and how to assess your risk tolerance.",
+      "category": "risk-management",
+      "categoryLabel": "Risk Management",
+      "image": "assets/images/understanding-risk-and-return-hero.png",
+      "date": "January 14, 2026",
+      "readTime": "15 min read",
+      "featured": true
+    },
+    {
+      "id": 1,
       "slug": "2026/01/getting-started-with-portfolio-tracking.html",
       "title": "Getting Started with Portfolio Tracking: A Beginner's Guide",
       "excerpt": "Learn how to effectively track your investment portfolio, understand key metrics, and make data-driven decisions for better returns.",
@@ -13,7 +25,7 @@
       "featured": true
     },
     {
-      "id": 1,
+      "id": 2,
       "slug": "2026/01/ai-powered-stock-discovery.html",
       "title": "How AI is Revolutionizing Stock Discovery for Indian Investors",
       "excerpt": "Discover how artificial intelligence helps identify investment opportunities in the Indian stock market with personalized recommendations.",
@@ -25,7 +37,7 @@
       "featured": true
     },
     {
-      "id": 2,
+      "id": 3,
       "slug": "2026/01/understanding-portfolio-diversification.html",
       "title": "Understanding Portfolio Diversification: Why It Matters",
       "excerpt": "A comprehensive guide to portfolio diversification strategies and how to reduce risk while maximizing returns in the Indian market.",
@@ -37,7 +49,7 @@
       "featured": true
     },
     {
-      "id": 3,
+      "id": 4,
       "slug": "2025/12/introduction-to-investing-why-start-now.html",
       "title": "Introduction to Investing: Why Start Now in 2025",
       "excerpt": "Learn why starting your investment journey now is crucial for building long-term wealth. Understand the power of compounding and how to overcome common barriers.",
@@ -49,7 +61,7 @@
       "featured": false
     },
     {
-      "id": 4,
+      "id": 5,
       "slug": "2025/10/import-zerodha-portfolio-60-seconds.html",
       "title": "Import Zerodha Portfolio in 60 Seconds: Complete Guide 2025",
       "excerpt": "Step-by-step guide to import your Zerodha portfolio instantly using OAuth integration. Track 100+ stocks, analyze performance, and get AI insights in under 1 minute.",
@@ -61,7 +73,7 @@
       "featured": false
     },
     {
-      "id": 5,
+      "id": 6,
       "slug": "2025/10/manual-csv-portfolio-import-complete-guide.html",
       "title": "Manual CSV Portfolio Import: Complete Guide for Indian Investors",
       "excerpt": "Import your stock portfolio from Groww, Upstox, 5paisa to Trade Gheware using CSV. Step-by-step guide with broker-specific templates and validation rules.",
@@ -73,7 +85,7 @@
       "featured": false
     },
     {
-      "id": 6,
+      "id": 7,
       "slug": "2025/10/setting-up-smart-alerts-complete-guide.html",
       "title": "Setting Up Smart Alerts: Complete Guide to Portfolio Risk Monitoring",
       "excerpt": "Learn how to set up AI-powered smart alerts for price changes, P&L thresholds, and sector concentration to protect your portfolio from unexpected risks.",
@@ -85,7 +97,7 @@
       "featured": false
     },
     {
-      "id": 7,
+      "id": 8,
       "slug": "2025/10/ai-stock-discovery-find-your-next-investment.html",
       "title": "AI Stock Discovery: Find Your Next Investment in 2025",
       "excerpt": "Discover how AI analyzes 5000+ NSE/BSE stocks using collaborative filtering, sentiment analysis, and fundamental analysis to find opportunities matching your goals.",
@@ -97,7 +109,7 @@
       "featured": false
     },
     {
-      "id": 8,
+      "id": 9,
       "slug": "2025/10/portfolio-diversification-beginners-guide.html",
       "title": "Portfolio Diversification 101: Complete Beginner's Guide for Indian Investors",
       "excerpt": "Master portfolio diversification with proven strategies that reduce risk by 40%. Includes sector allocation, asset class balance, and practical NSE/BSE examples.",
@@ -110,6 +122,7 @@
     }
   ],
   "categories": [
+    { "id": "risk-management", "label": "Risk Management", "icon": "" },
     { "id": "tutorials", "label": "Tutorials", "icon": "" },
     { "id": "getting-started", "label": "Getting Started", "icon": "" },
     { "id": "ai-technology", "label": "AI & Technology", "icon": "" },
