@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#4fd1c5" stroke-width="4"/>
+  <path d="M50 15 C50 15 25 45 25 62 C25 78 36 85 50 85 C64 85 75 78 75 62 C75 45 50 15 50 15 Z" fill="#e53e3e"/>
+  <text x="50" y="72" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">HG</text>
+</svg>

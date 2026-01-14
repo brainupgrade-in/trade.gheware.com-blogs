@@ -1,0 +1,223 @@
+<!-- Header Template - Compact Mobile-First -->
+<header class="header-compact">
+    <nav class="container">
+        <div class="nav-row">
+            <a href="/blog/" class="logo-compact">
+                <svg viewBox="0 0 32 32" class="logo-icon-sm">
+                    <circle cx="16" cy="16" r="14" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+                    <path d="M8 20 L12 14 L16 18 L20 10 L24 12" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="8" cy="20" r="2" fill="#2563eb"/>
+                    <circle cx="12" cy="14" r="2" fill="#2563eb"/>
+                    <circle cx="16" cy="18" r="2" fill="#2563eb"/>
+                    <circle cx="20" cy="10" r="2" fill="#10b981"/>
+                    <circle cx="24" cy="12" r="2" fill="#10b981"/>
+                </svg>
+                <span class="brand-compact">Trade Gheware</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" y1="7" x2="20" y2="7"></line>
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="17" x2="20" y2="17"></line>
+                </svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                    <line x1="6" y1="18" x2="18" y2="6"></line>
+                </svg>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="/blog/" class="nav-item">Blog</a>
+                <a href="https://trade.gheware.com" class="nav-item nav-cta">Launch App</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+/* Compact Header Styles */
+.header-compact {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.header-compact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+}
+
+.logo-compact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-icon-sm {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.brand-compact {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.menu-btn:hover { background: rgba(255,255,255,0.1); }
+.menu-btn svg { width: 22px; height: 22px; }
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-links.active { display: flex; }
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 1rem;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+    background: rgba(255,255,255,0.08);
+    color: white;
+}
+
+.nav-cta {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-cta:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+/* Tablet+ */
+@media (min-width: 640px) {
+    .menu-btn { display: none; }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        gap: 0.5rem;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        height: 36px;
+        padding: 0 0.875rem;
+        font-size: 0.875rem;
+    }
+
+    .nav-cta {
+        padding: 0 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .nav-row { height: 56px; }
+    .logo-icon-sm { width: 32px; height: 32px; }
+    .brand-compact { font-size: 1.0625rem; }
+}
+</style>
+
+<script>
+// Compact header mobile menu
+(function() {
+    function initMenu() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('nav-menu');
+        if (!btn || !nav) { setTimeout(initMenu, 50); return; }
+
+        const iconMenu = btn.querySelector('.icon-menu');
+        const iconClose = btn.querySelector('.icon-close');
+
+        function toggle() {
+            const open = nav.classList.toggle('active');
+            btn.setAttribute('aria-expanded', open);
+            if (iconMenu && iconClose) {
+                iconMenu.style.display = open ? 'none' : 'block';
+                iconClose.style.display = open ? 'block' : 'none';
+            }
+        }
+
+        function close() {
+            nav.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
+            if (iconMenu && iconClose) {
+                iconMenu.style.display = 'block';
+                iconClose.style.display = 'none';
+            }
+        }
+
+        btn.addEventListener('click', e => { e.stopPropagation(); toggle(); });
+        document.addEventListener('click', e => {
+            if (!nav.contains(e.target) && !btn.contains(e.target)) close();
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && nav.classList.contains('active')) { close(); btn.focus(); }
+        });
+        window.addEventListener('resize', () => { if (window.innerWidth >= 640) close(); });
+        nav.querySelectorAll('.nav-item').forEach(link => link.addEventListener('click', close));
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMenu);
+    } else {
+        initMenu();
+    }
+})();
+</script>

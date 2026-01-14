@@ -1,0 +1,242 @@
+<!-- Investment Disclaimer Template - Collapsible -->
+<div class="disclaimer-compact">
+    <div class="disclaimer-header" onclick="toggleDisclaimer()" role="button" tabindex="0" aria-expanded="false" aria-controls="disclaimer-content">
+        <div class="disclaimer-summary">
+            <span class="disclaimer-icon">⚠️</span>
+            <span class="disclaimer-title">Investment Disclaimer</span>
+            <span class="disclaimer-brief">Not SEBI registered · Educational only · Consult a financial advisor</span>
+        </div>
+        <span class="disclaimer-toggle" aria-hidden="true">
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </span>
+    </div>
+    <div class="disclaimer-content" id="disclaimer-content" aria-hidden="true">
+        <div class="disclaimer-grid">
+            <div class="disclaimer-item">
+                <strong>Not Investment Advice</strong>
+                <p>Educational content only. Does not constitute investment advice, recommendations, or endorsements.</p>
+            </div>
+            <div class="disclaimer-item">
+                <strong>Not SEBI Registered</strong>
+                <p>We are not registered with SEBI as Investment Advisors. Consult SEBI-registered advisors for personalized advice.</p>
+            </div>
+            <div class="disclaimer-item">
+                <strong>Market Risks</strong>
+                <p>Investments in securities markets are subject to market risks. Read all related documents carefully before investing.</p>
+            </div>
+            <div class="disclaimer-item">
+                <strong>Past Performance</strong>
+                <p>Past performance is not indicative of future returns. Historical data shown is for educational purposes only.</p>
+            </div>
+            <div class="disclaimer-item">
+                <strong>Your Responsibility</strong>
+                <p>You are solely responsible for your investment decisions. Verify all information independently before acting.</p>
+            </div>
+            <div class="disclaimer-item">
+                <strong>No Guarantees</strong>
+                <p>We make no warranties about the accuracy, completeness, or reliability of any information provided.</p>
+            </div>
+        </div>
+        <p class="disclaimer-footer">
+            <strong>By using this content:</strong> You acknowledge that this is for educational purposes only and agree to consult qualified financial professionals for investment decisions.
+            <br><span class="disclaimer-entity">© Gheware Technologies · No liability assumed · Not SEBI registered</span>
+        </p>
+    </div>
+</div>
+
+<style>
+/* Collapsible Disclaimer Styles */
+#disclaimer-placeholder {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.disclaimer-compact {
+    background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+    border: 1px solid #fcd34d;
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.08);
+}
+
+.disclaimer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.disclaimer-header:hover {
+    background: rgba(252, 211, 77, 0.3);
+}
+
+.disclaimer-header:focus {
+    outline: 2px solid #f59e0b;
+    outline-offset: -2px;
+}
+
+.disclaimer-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.disclaimer-icon {
+    font-size: 1.25rem;
+}
+
+.disclaimer-title {
+    font-weight: 700;
+    color: #92400e;
+    font-size: 0.9rem;
+}
+
+.disclaimer-brief {
+    color: #78350f;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.disclaimer-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    transition: transform 0.3s, background 0.2s;
+    flex-shrink: 0;
+}
+
+.chevron-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.disclaimer-compact.expanded .disclaimer-toggle {
+    transform: rotate(180deg);
+    background: rgba(245, 158, 11, 0.2);
+}
+
+.disclaimer-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.3s;
+    padding: 0 1rem;
+}
+
+.disclaimer-compact.expanded .disclaimer-content {
+    max-height: 600px;
+    padding: 0 1rem 1rem;
+}
+
+.disclaimer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.disclaimer-item {
+    background: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-left: 3px solid #f59e0b;
+}
+
+.disclaimer-item strong {
+    display: block;
+    color: #92400e;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.disclaimer-item p {
+    margin: 0;
+    color: #78350f;
+    font-size: 0.7rem;
+    line-height: 1.4;
+}
+
+.disclaimer-footer {
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid #fcd34d;
+    color: #78350f;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.disclaimer-entity {
+    opacity: 0.7;
+    font-size: 0.65rem;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    #disclaimer-placeholder {
+        margin: 1.5rem 0.5rem;
+    }
+
+    .disclaimer-compact {
+        border-radius: 8px;
+    }
+
+    .disclaimer-header {
+        padding: 0.75rem;
+    }
+
+    .disclaimer-brief {
+        display: none;
+    }
+
+    .disclaimer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .disclaimer-compact.expanded .disclaimer-content {
+        max-height: 800px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .disclaimer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+
+<script>
+function toggleDisclaimer() {
+    const container = document.querySelector('.disclaimer-compact');
+    const header = container.querySelector('.disclaimer-header');
+    const content = container.querySelector('.disclaimer-content');
+    const isExpanded = container.classList.toggle('expanded');
+
+    header.setAttribute('aria-expanded', isExpanded);
+    content.setAttribute('aria-hidden', !isExpanded);
+}
+
+// Keyboard support
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.disclaimer-header');
+    if (header) {
+        header.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleDisclaimer();
+            }
+        });
+    }
+});
+</script>
