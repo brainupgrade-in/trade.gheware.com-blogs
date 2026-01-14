@@ -39,21 +39,82 @@
     <section class="blog-hero">
         <div class="blog-hero-background"></div>
         <div class="container blog-hero-content">
+            <!-- Live Badge -->
             <div class="blog-hero-badge-container">
                 <span class="blog-hero-badge">
+                    <span class="badge-live-dot"></span>
                     <span class="badge-icon">📈</span>
-                    AI-Powered Portfolio Analytics
+                    AI-Powered Insights
                     <span class="badge-pulse"></span>
                 </span>
             </div>
+
+            <!-- Main Title -->
             <h1 class="blog-hero-title">
-                <span class="title-gradient">Trade Gheware Blog</span>
+                <span class="title-gradient">Invest Smarter,</span>
+                <span class="title-highlight">Not Harder</span>
             </h1>
+
+            <!-- Value Props - Scannable Benefits -->
+            <div class="hero-value-props">
+                <div class="value-prop">
+                    <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+                    </svg>
+                    <span>AI Stock Discovery</span>
+                </div>
+                <div class="value-prop">
+                    <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
+                    </svg>
+                    <span>Portfolio Analytics</span>
+                </div>
+                <div class="value-prop">
+                    <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                    <span>Smart Alerts</span>
+                </div>
+            </div>
+
+            <!-- Description -->
             <p class="blog-hero-description">
-                Master your investments with AI-powered insights.
-                Learn portfolio tracking, stock discovery, smart alerts, diversification strategies,
-                and data-driven investing for the Indian stock market.
+                Free guides on portfolio tracking, stock discovery, and data-driven investing for Indian markets.
             </p>
+
+            <!-- Live Stats -->
+            <div class="hero-stats-bar">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="9">0</span>
+                    <span class="hero-stat-label">Articles</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="5">0</span>
+                    <span class="hero-stat-label">Topics</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="100">0</span>
+                    <span class="hero-stat-label">% Free</span>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta-group">
+                <a href="#blogGrid" class="hero-cta-primary" onclick="document.getElementById('blogGrid').scrollIntoView({behavior:'smooth'});return false;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                    Start Reading
+                </a>
+                <a href="https://trade.gheware.com" class="hero-cta-secondary">
+                    Try the App Free
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -594,6 +655,37 @@
 
         // Initialize when templates are loaded
         document.addEventListener('templatesLoaded', () => BlogApp.init());
+
+        // Animate stat counters on page load
+        function animateCounters() {
+            const counters = document.querySelectorAll('.hero-stat-number[data-count]');
+            const duration = 1500; // ms
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.count);
+                const start = 0;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.floor(start + (target - start) * eased);
+                    counter.textContent = current;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                }
+                requestAnimationFrame(updateCounter);
+            });
+        }
+
+        // Run counter animation after a short delay
+        setTimeout(animateCounters, 800);
     </script>
 </body>
 </html>
