@@ -14,8 +14,9 @@
     <link rel="canonical" href="https://trade.gheware.com/blog/posts/2025/10/import-zerodha-portfolio-60-seconds.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=4">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -129,36 +130,43 @@
 <body>
     <!-- Header loaded via template-loader.js -->
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="container">
+    <!-- Article Hero with Background Image -->
+    <section class="article-hero" style="background-image: url('../../../assets/images/import-zerodha-portfolio-hero.png');">
+        <div class="container article-hero-content">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="/blog/">Blog</a>
                 <span class="separator">/</span>
                 <a href="/blog/?category=tutorials">Tutorials</a>
             </nav>
             <h1>Import Zerodha Portfolio in 60 Seconds: Complete Guide 2025</h1>
-            <div class="article-meta">
-                <span class="author">By Rajesh Gheware</span>
-                <span class="separator">|</span>
-                <time datetime="2025-10-25">October 25, 2025</time>
-                <span class="separator">|</span>
-                <span class="read-time">8 min read</span>
+            <div class="article-hero-meta">
+                <div class="article-hero-author">
+                    <img src="../../../images/rajesh-gheware.jpg" alt="Rajesh Gheware">
+                    <div class="article-hero-author-info">
+                        <span class="article-hero-author-name">Rajesh Gheware</span>
+                        <span class="article-hero-author-role">Founder, Trade Gheware</span>
+                    </div>
+                </div>
+                <div class="article-hero-details">
+                    <time datetime="2025-10-25">October 25, 2025</time>
+                    <span class="separator">|</span>
+                    <span class="read-time">8 min read</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <article class="article-content container">
+    <article class="article-content">
         <!-- Key Takeaways Box (Top) -->
-        <div class="key-takeaways" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="color: white; margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.75rem;"><strong>60-Second Import:</strong> Use OAuth to connect your Zerodha account instantly (no manual CSV uploads)</li>
-                <li style="margin-bottom: 0.75rem;"><strong>100% Safe:</strong> Read-only access - Trade Gheware cannot trade, withdraw, or modify your account</li>
-                <li style="margin-bottom: 0.75rem;"><strong>On-Demand Sync:</strong> Manually sync holdings anytime + automatic price updates every 5 minutes</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Free Forever:</strong> Portfolio import and tracking are completely free (no credit card required)</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Manual CSV Import:</strong> Alternative option available for portfolios from other brokers</li>
+        <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>60-Second Import:</strong> Use OAuth to connect your Zerodha account instantly (no manual CSV uploads)</li>
+                <li><strong>100% Safe:</strong> Read-only access - Trade Gheware cannot trade, withdraw, or modify your account</li>
+                <li><strong>On-Demand Sync:</strong> Manually sync holdings anytime + automatic price updates every 5 minutes</li>
+                <li><strong>Free Forever:</strong> Portfolio import and tracking are completely free (no credit card required)</li>
+                <li><strong>Manual CSV Import:</strong> Alternative option available for portfolios from other brokers</li>
             </ul>
             <p style="margin-top: 1.5rem; font-size: 0.9rem;"><strong>Next Step:</strong> <a href="https://trade.gheware.com/dashboard" style="color: white; text-decoration: underline;">Import your Zerodha portfolio now</a></p>
         </div>
@@ -190,7 +198,7 @@
             <h2>What is Zerodha Portfolio Import?</h2>
             <p>Zerodha Portfolio Import is the process of securely connecting your Zerodha trading account to Trade Gheware to automatically fetch and track your stock holdings in real-time. Instead of manually entering each stock, quantity, and purchase price, OAuth integration pulls all data directly from Zerodha's servers in under 60 seconds.</p>
 
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h3>Portfolio Import (OAuth Integration)</h3>
                 <p>A secure method of connecting your brokerage account to a third-party application using industry-standard OAuth 2.0 protocol. The app receives read-only access to view your holdings without ever seeing your login credentials.</p>
                 <p><strong>Example:</strong> When you import your Zerodha portfolio with 50 stocks worth Rs.10 lakhs, Trade Gheware receives: stock names, quantities, average buy prices, current market values, and P&L data - but <em>cannot</em> buy/sell stocks or access your funds.</p>
@@ -233,12 +241,12 @@
 
             <div class="checklist-box" style="background: #f0fdf4; border: 1px solid #86efac; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
                 <h3>Pre-Import Checklist</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.75rem;"><strong>Active Zerodha Account:</strong> You must have an active Zerodha trading account with at least 1 stock holding</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>Zerodha Kite Access:</strong> Ensure you can log in to kite.zerodha.com successfully</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>Trade Gheware Account:</strong> Sign up free at Trade Gheware (takes 30 seconds with Google login)</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>Stable Internet:</strong> Minimum 2 Mbps connection (OAuth requires real-time communication)</li>
-                    <li style="margin-bottom: 0.75rem;"><strong>Browser Compatibility:</strong> Chrome, Firefox, Safari, or Edge (latest version) - pop-ups enabled</li>
+                <ul>
+                    <li><strong>Active Zerodha Account:</strong> You must have an active Zerodha trading account with at least 1 stock holding</li>
+                    <li><strong>Zerodha Kite Access:</strong> Ensure you can log in to kite.zerodha.com successfully</li>
+                    <li><strong>Trade Gheware Account:</strong> Sign up free at Trade Gheware (takes 30 seconds with Google login)</li>
+                    <li><strong>Stable Internet:</strong> Minimum 2 Mbps connection (OAuth requires real-time communication)</li>
+                    <li><strong>Browser Compatibility:</strong> Chrome, Firefox, Safari, or Edge (latest version) - pop-ups enabled</li>
                 </ul>
             </div>
         </section>
@@ -250,7 +258,7 @@
 
             <div class="step-by-step-guide">
                 <!-- Step 1 -->
-                <div class="step" style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border-left: 4px solid #667eea;">
+                <div class="step">
                     <h3><span style="background: #667eea; color: white; padding: 4px 12px; border-radius: 20px; margin-right: 8px;">Step 1</span> Sign in to Trade Gheware</h3>
                     <p><strong>Time:</strong> 10 seconds</p>
                     <ol>
@@ -262,7 +270,7 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="step" style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border-left: 4px solid #764ba2;">
+                <div class="step">
                     <h3><span style="background: #764ba2; color: white; padding: 4px 12px; border-radius: 20px; margin-right: 8px;">Step 2</span> Navigate to Holdings Import</h3>
                     <p><strong>Time:</strong> 5 seconds</p>
                     <ol>
@@ -273,7 +281,7 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="step" style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border-left: 4px solid #f093fb;">
+                <div class="step">
                     <h3><span style="background: #f093fb; color: white; padding: 4px 12px; border-radius: 20px; margin-right: 8px;">Step 3</span> Initiate Zerodha Connection</h3>
                     <p><strong>Time:</strong> 5 seconds</p>
                     <ol>
@@ -284,7 +292,7 @@
                 </div>
 
                 <!-- Step 4 -->
-                <div class="step" style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border-left: 4px solid #4facfe;">
+                <div class="step">
                     <h3><span style="background: #4facfe; color: white; padding: 4px 12px; border-radius: 20px; margin-right: 8px;">Step 4</span> Authorize Trade Gheware on Zerodha Kite</h3>
                     <p><strong>Time:</strong> 30 seconds</p>
                     <ol>
@@ -296,7 +304,7 @@
                 </div>
 
                 <!-- Step 5 -->
-                <div class="step" style="background: #f8fafc; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; border-left: 4px solid #43e97b;">
+                <div class="step">
                     <h3><span style="background: #43e97b; color: white; padding: 4px 12px; border-radius: 20px; margin-right: 8px;">Step 5</span> Verify Import Success</h3>
                     <p><strong>Time:</strong> 10 seconds</p>
                     <ol>
@@ -400,24 +408,24 @@
         </section>
 
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin: 0 0 1rem 0;">Ready to Import Your Zerodha Portfolio?</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Join 25,000+ investors tracking portfolios with AI-powered insights.</p>
-            <a href="https://trade.gheware.com/dashboard" class="cta-button" style="background: white; color: #0ea5e9; padding: 14px 32px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; font-size: 1.1rem;">Start Free - Import in 60 Seconds</a>
-            <p class="cta-subtext" style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">No credit card required | Cancel anytime</p>
+        <div class="cta-box">
+            <h3>Ready to Import Your Zerodha Portfolio?</h3>
+            <p>Join 25,000+ investors tracking portfolios with AI-powered insights.</p>
+            <a href="https://trade.gheware.com/dashboard" class="cta-button">Start Free - Import in 60 Seconds</a>
+            <p class="cta-subtext">No credit card required | Cancel anytime</p>
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Related Investment Guides</h3>
-            <div class="related-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html" style="color: #0ea5e9;">Portfolio Diversification 101: Complete Beginner's Guide</a></h4>
-                    <p style="margin: 0; color: #64748b;">Learn proven diversification strategies to reduce risk by 40%.</p>
+        <div class="related-posts">
+            <h3>Related Investment Guides</h3>
+            <div class="related-grid">
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html">Portfolio Diversification 101: Complete Beginner's Guide</a></h4>
+                    <p>Learn proven diversification strategies to reduce risk by 40%.</p>
                 </div>
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html" style="color: #0ea5e9;">Smart Alerts: Never Miss Critical Portfolio Signals</a></h4>
-                    <p style="margin: 0; color: #64748b;">Set up AI-powered alerts for price drops, sector concentration, and portfolio risks.</p>
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html">Smart Alerts: Never Miss Critical Portfolio Signals</a></h4>
+                    <p>Set up AI-powered alerts for price drops, sector concentration, and portfolio risks.</p>
                 </div>
             </div>
         </div>

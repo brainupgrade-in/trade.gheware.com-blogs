@@ -14,8 +14,9 @@
     <link rel="canonical" href="https://trade.gheware.com/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=4">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -73,36 +74,43 @@
 <body>
     <!-- Header loaded via template-loader.js -->
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="container">
+    <!-- Article Hero with Background Image -->
+    <section class="article-hero" style="background-image: url('../../../assets/images/setting-up-smart-alerts-hero.png');">
+        <div class="container article-hero-content">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="/blog/">Blog</a>
                 <span class="separator">/</span>
                 <a href="/blog/?category=tutorials">Tutorials</a>
             </nav>
             <h1>Setting Up Smart Alerts: Complete Guide to Portfolio Risk Monitoring</h1>
-            <div class="article-meta">
-                <span class="author">By Rajesh Gheware</span>
-                <span class="separator">|</span>
-                <time datetime="2025-10-24">October 24, 2025</time>
-                <span class="separator">|</span>
-                <span class="read-time">12 min read</span>
+            <div class="article-hero-meta">
+                <div class="article-hero-author">
+                    <img src="../../../images/rajesh-gheware.jpg" alt="Rajesh Gheware">
+                    <div class="article-hero-author-info">
+                        <span class="article-hero-author-name">Rajesh Gheware</span>
+                        <span class="article-hero-author-role">Founder, Trade Gheware</span>
+                    </div>
+                </div>
+                <div class="article-hero-details">
+                    <time datetime="2025-10-24">October 24, 2025</time>
+                    <span class="separator">|</span>
+                    <span class="read-time">12 min read</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <article class="article-content container">
+    <article class="article-content">
         <!-- Key Takeaways Box -->
-        <div class="key-takeaways" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="color: white; margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.75rem;"><strong>Reduce False Positives:</strong> AI-powered alerts cut false notifications by 75% through intelligent filtering</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Optimal Alert Count:</strong> Set 5-10 alerts per portfolio for comprehensive coverage without overload</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Alert Types:</strong> Configure price, P&L, sector concentration, and stock-specific risk alerts</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Response Time:</strong> React to market events 10x faster with real-time notifications</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Profit Capture:</strong> Capture 85% more profit opportunities with timely alerts</li>
+        <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>Reduce False Positives:</strong> AI-powered alerts cut false notifications by 75% through intelligent filtering</li>
+                <li><strong>Optimal Alert Count:</strong> Set 5-10 alerts per portfolio for comprehensive coverage without overload</li>
+                <li><strong>Alert Types:</strong> Configure price, P&L, sector concentration, and stock-specific risk alerts</li>
+                <li><strong>Response Time:</strong> React to market events 10x faster with real-time notifications</li>
+                <li><strong>Profit Capture:</strong> Capture 85% more profit opportunities with timely alerts</li>
             </ul>
         </div>
 
@@ -130,7 +138,7 @@
         <section id="what-are-smart-alerts">
             <h2>What Are Smart Alerts and Why Do They Matter?</h2>
 
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <p><strong>Smart alerts</strong> are intelligent, AI-powered notifications that continuously monitor your investment portfolio for predefined conditions, automatically alerting you when critical events occur - from price movements and P&L thresholds to risk concentrations and market opportunities.</p>
             </div>
 
@@ -155,7 +163,7 @@
             <h2>Types of Alerts You Should Set Up</h2>
 
             <h3>1. Price Alerts (Most Common)</h3>
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>Price Alert Types:</h4>
                 <ul>
                     <li><strong>Upper Threshold:</strong> Alert when stock rises above target (e.g., Reliance > Rs 2,500)</li>
@@ -167,7 +175,7 @@
             </div>
 
             <h3>2. P&L Alerts (Portfolio-Level)</h3>
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>P&L Alert Configuration:</h4>
                 <ul>
                     <li><strong>Daily P&L:</strong> Alert when daily gains/losses exceed Rs 10,000</li>
@@ -186,19 +194,19 @@
             </ul>
 
             <h3>4. Stock-Specific Risk Alerts</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Alert Type</th>
-                        <th style="padding: 12px;">Trigger Condition</th>
-                        <th style="padding: 12px;">Example</th>
+                        <th>Alert Type</th>
+                        <th>Trigger Condition</th>
+                        <th>Example</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;"><strong>Volume Spike</strong></td><td style="padding: 12px;">3x average volume</td><td style="padding: 12px;">Adani Enterprises volume surge</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>Volatility Alert</strong></td><td style="padding: 12px;">Intraday swing >5%</td><td style="padding: 12px;">Paytm 7% intraday swing</td></tr>
-                    <tr><td style="padding: 12px;"><strong>Circuit Limit</strong></td><td style="padding: 12px;">Near upper/lower circuit</td><td style="padding: 12px;">Stock at 18% gain (20% limit)</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>52-Week High/Low</strong></td><td style="padding: 12px;">New yearly extremes</td><td style="padding: 12px;">HDFC Bank hits 52-week low</td></tr>
+                    <tr><td><strong>Volume Spike</strong></td><td>3x average volume</td><td>Adani Enterprises volume surge</td></tr>
+                    <tr><td><strong>Volatility Alert</strong></td><td>Intraday swing >5%</td><td>Paytm 7% intraday swing</td></tr>
+                    <tr><td><strong>Circuit Limit</strong></td><td>Near upper/lower circuit</td><td>Stock at 18% gain (20% limit)</td></tr>
+                    <tr><td><strong>52-Week High/Low</strong></td><td>New yearly extremes</td><td>HDFC Bank hits 52-week low</td></tr>
                 </tbody>
             </table>
         </section>
@@ -207,7 +215,7 @@
         <section id="step-by-step-setup">
             <h2>Step-by-Step Setup Guide</h2>
 
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>Step 1: Access Smart Alerts Dashboard (30 seconds)</h4>
                 <ul>
                     <li>Login to Trade Gheware</li>
@@ -250,24 +258,24 @@
             <h3>The 5-10 Rule for Alert Management</h3>
             <p>Research shows that investors with 5-10 active alerts achieve optimal results:</p>
 
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Number of Alerts</th>
-                        <th style="padding: 12px;">Response Rate</th>
-                        <th style="padding: 12px;">Effectiveness</th>
+                        <th>Number of Alerts</th>
+                        <th>Response Rate</th>
+                        <th>Effectiveness</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;">1-3 alerts</td><td style="padding: 12px;">95%</td><td style="padding: 12px;">Under-monitored</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>5-10 alerts</strong></td><td style="padding: 12px;"><strong>90%</strong></td><td style="padding: 12px;"><strong>Optimal</strong></td></tr>
-                    <tr><td style="padding: 12px;">15-20 alerts</td><td style="padding: 12px;">60%</td><td style="padding: 12px;">Diminishing returns</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">20+ alerts</td><td style="padding: 12px;">30%</td><td style="padding: 12px;">Counterproductive</td></tr>
+                    <tr><td>1-3 alerts</td><td>95%</td><td>Under-monitored</td></tr>
+                    <tr><td><strong>5-10 alerts</strong></td><td><strong>90%</strong></td><td><strong>Optimal</strong></td></tr>
+                    <tr><td>15-20 alerts</td><td>60%</td><td>Diminishing returns</td></tr>
+                    <tr><td>20+ alerts</td><td>30%</td><td>Counterproductive</td></tr>
                 </tbody>
             </table>
 
             <h3>Recommended Alert Distribution</h3>
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>Optimal 8-Alert Configuration:</h4>
                 <ul>
                     <li><strong>2 Price Alerts:</strong> Entry and exit points for volatile stocks</li>
@@ -285,7 +293,7 @@
             <h2>Real Examples with Indian Stocks</h2>
 
             <h3>Example 1: Reliance Industries Price Alert</h3>
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>Scenario: Profit Booking Alert</h4>
                 <ul>
                     <li><strong>Stock:</strong> Reliance Industries (RELIANCE)</li>
@@ -297,7 +305,7 @@
             </div>
 
             <h3>Example 2: IT Sector Concentration Alert</h3>
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <h4>Scenario: Sector Overweight Warning</h4>
                 <ul>
                     <li><strong>Initial Allocation:</strong> IT sector: 22% of portfolio</li>
@@ -309,7 +317,7 @@
             </div>
 
             <h3>Example 3: Stop-Loss Alert for Volatile Stock</h3>
-            <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="warning-box">
                 <h4>Scenario: Risk Management Alert</h4>
                 <ul>
                     <li><strong>Stock:</strong> Adani Green Energy</li>
@@ -325,7 +333,7 @@
         <section id="common-mistakes">
             <h2>Common Mistakes to Avoid</h2>
 
-            <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="warning-box">
                 <h3>Top 7 Alert Configuration Mistakes</h3>
 
                 <h4>1. Setting Alerts Too Close to Current Price</h4>
@@ -351,18 +359,18 @@
             <h2>How AI Improves Alert Accuracy</h2>
 
             <h3>Traditional Alerts vs. AI-Powered Smart Alerts</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Feature</th>
-                        <th style="padding: 12px;">Traditional</th>
-                        <th style="padding: 12px;">AI Smart</th>
+                        <th>Feature</th>
+                        <th>Traditional</th>
+                        <th>AI Smart</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;"><strong>False Positives</strong></td><td style="padding: 12px;">40-50/month</td><td style="padding: 12px;">10-15/month</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>Context Awareness</strong></td><td style="padding: 12px;">None</td><td style="padding: 12px;">Market, news, patterns</td></tr>
-                    <tr><td style="padding: 12px;"><strong>Adaptation</strong></td><td style="padding: 12px;">Manual only</td><td style="padding: 12px;">Self-adjusting</td></tr>
+                    <tr><td><strong>False Positives</strong></td><td>40-50/month</td><td>10-15/month</td></tr>
+                    <tr><td><strong>Context Awareness</strong></td><td>None</td><td>Market, news, patterns</td></tr>
+                    <tr><td><strong>Adaptation</strong></td><td>Manual only</td><td>Self-adjusting</td></tr>
                 </tbody>
             </table>
 
@@ -403,23 +411,23 @@
         </section>
 
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin: 0 0 1rem 0;">Start Monitoring Your Portfolio Intelligently</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Set up AI-powered smart alerts and never miss a critical market event.</p>
-            <a href="https://trade.gheware.com/dashboard" class="cta-button" style="background: white; color: #0ea5e9; padding: 14px 32px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; font-size: 1.1rem;">Try Smart Alerts Free</a>
+        <div class="cta-box">
+            <h3>Start Monitoring Your Portfolio Intelligently</h3>
+            <p>Set up AI-powered smart alerts and never miss a critical market event.</p>
+            <a href="https://trade.gheware.com/dashboard" class="cta-button">Try Smart Alerts Free</a>
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Related Investment Guides</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html" style="color: #0ea5e9;">Portfolio Diversification 101</a></h4>
-                    <p style="margin: 0; color: #64748b;">Learn proven diversification strategies to reduce risk by 40%.</p>
+        <div class="related-posts">
+            <h3>Related Investment Guides</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html">Portfolio Diversification 101</a></h4>
+                    <p>Learn proven diversification strategies to reduce risk by 40%.</p>
                 </div>
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/ai-stock-discovery-find-your-next-investment.html" style="color: #0ea5e9;">AI Stock Discovery</a></h4>
-                    <p style="margin: 0; color: #64748b;">Discover how AI analyzes 5000+ stocks to find opportunities.</p>
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/ai-stock-discovery-find-your-next-investment.html">AI Stock Discovery</a></h4>
+                    <p>Discover how AI analyzes 5000+ stocks to find opportunities.</p>
                 </div>
             </div>
         </div>

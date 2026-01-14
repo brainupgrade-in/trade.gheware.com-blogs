@@ -1,0 +1,52 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trade Gheware Logo - Icon + Text -->
+
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+    <linearGradient id="logoArrowGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#4caf50"/>
+    </linearGradient>
+    <radialGradient id="logoInnerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFACD"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Icon (scaled to 36x36, centered at 20,20) -->
+  <g transform="translate(2, 2)">
+    <!-- Background -->
+    <circle cx="18" cy="18" r="18" fill="#1a472a"/>
+
+    <!-- Coin border -->
+    <path
+      d="M 18,3.4 L 24.75,5.6 L 30.4,11.25 L 32.6,18 L 30.4,24.75 L 24.75,30.4 L 18,32.6 L 11.25,30.4 L 5.6,24.75 L 3.4,18 L 5.6,11.25 L 11.25,5.6 Z"
+      fill="url(#logoGoldGrad)"
+      stroke="#DAA520"
+      stroke-width="0.9"
+    />
+
+    <!-- Inner glow circle -->
+    <circle cx="18" cy="18" r="11.25" fill="url(#logoInnerGlow)" opacity="0.7"/>
+
+    <!-- Rupee symbol -->
+    <text x="18" y="21.5" font-size="14.5" font-weight="bold" fill="#1a472a" text-anchor="middle" font-family="Arial, sans-serif">₹</text>
+
+    <!-- Upward arrow -->
+    <path d="M 18 7.9 L 13.5 12.4 L 15.75 12.4 L 15.75 16.9 L 20.25 16.9 L 20.25 12.4 L 22.5 12.4 Z" fill="url(#logoArrowGrad)"/>
+
+    <!-- Sparkle -->
+    <circle cx="18" cy="6.2" r="1.1" fill="#FFD700"/>
+  </g>
+
+  <!-- Text: Trade Gheware -->
+  <text x="48" y="27" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" fill="#1a472a">
+    <tspan>Trade</tspan>
+    <tspan fill="#2e7d32" font-weight="700"> Gheware</tspan>
+  </text>
+</svg>

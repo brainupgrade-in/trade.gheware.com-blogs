@@ -14,8 +14,9 @@
     <link rel="canonical" href="https://trade.gheware.com/blog/posts/2026/01/understanding-portfolio-diversification.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=4">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -62,35 +63,42 @@
 <body>
     <!-- Header loaded via template-loader.js -->
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="container">
+    <!-- Article Hero with Background Image -->
+    <section class="article-hero" style="background-image: url('../../../assets/images/understanding-diversification-hero.png');">
+        <div class="container article-hero-content">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="/blog/">Blog</a>
                 <span class="separator">/</span>
                 <a href="/blog/?category=investment-strategy">Investment Strategy</a>
             </nav>
             <h1>Understanding Portfolio Diversification: Why It Matters</h1>
-            <div class="article-meta">
-                <span class="author">By Rajesh Gheware</span>
-                <span class="separator">|</span>
-                <time datetime="2026-01-05">January 5, 2026</time>
-                <span class="separator">|</span>
-                <span class="read-time">6 min read</span>
+            <div class="article-hero-meta">
+                <div class="article-hero-author">
+                    <img src="../../../images/rajesh-gheware.jpg" alt="Rajesh Gheware">
+                    <div class="article-hero-author-info">
+                        <span class="article-hero-author-name">Rajesh Gheware</span>
+                        <span class="article-hero-author-role">Founder, Trade Gheware</span>
+                    </div>
+                </div>
+                <div class="article-hero-details">
+                    <time datetime="2026-01-05">January 5, 2026</time>
+                    <span class="separator">|</span>
+                    <span class="read-time">6 min read</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <article class="article-content container">
+    <article class="article-content">
         <!-- Key Takeaways Box -->
-        <div class="key-takeaways" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="color: white; margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.75rem;"><strong>Risk Reduction:</strong> Diversification reduces risk without necessarily reducing expected returns</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Uncorrelated Assets:</strong> Effective diversification requires uncorrelated assets, not just more stocks</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Sector Limits:</strong> No single sector should exceed 25-30% of your portfolio</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Balanced Approach:</strong> 50% large-cap, 30% mid-cap, 20% small-cap is a good starting point</li>
+        <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>Risk Reduction:</strong> Diversification reduces risk without necessarily reducing expected returns</li>
+                <li><strong>Uncorrelated Assets:</strong> Effective diversification requires uncorrelated assets, not just more stocks</li>
+                <li><strong>Sector Limits:</strong> No single sector should exceed 25-30% of your portfolio</li>
+                <li><strong>Balanced Approach:</strong> 50% large-cap, 30% mid-cap, 20% small-cap is a good starting point</li>
             </ul>
         </div>
 
@@ -138,41 +146,41 @@
             <h3>Sector Diversification</h3>
             <p>The Indian market has distinct sectors with different characteristics:</p>
 
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Sector</th>
-                        <th style="padding: 12px;">Characteristics</th>
-                        <th style="padding: 12px;">Typical Behavior</th>
+                        <th>Sector</th>
+                        <th>Characteristics</th>
+                        <th>Typical Behavior</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;">IT</td><td style="padding: 12px;">Export-oriented, USD earnings</td><td style="padding: 12px;">Benefits from rupee depreciation</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">Banking</td><td style="padding: 12px;">Economy-linked</td><td style="padding: 12px;">Cyclical with economic growth</td></tr>
-                    <tr><td style="padding: 12px;">Pharma</td><td style="padding: 12px;">Defensive, global exposure</td><td style="padding: 12px;">Stable during downturns</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">FMCG</td><td style="padding: 12px;">Consumption-driven</td><td style="padding: 12px;">Low volatility, consistent</td></tr>
-                    <tr><td style="padding: 12px;">Auto</td><td style="padding: 12px;">Cyclical, discretionary</td><td style="padding: 12px;">Follows economic cycles</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">Metals</td><td style="padding: 12px;">Commodity-linked</td><td style="padding: 12px;">Volatile with global prices</td></tr>
+                    <tr><td>IT</td><td>Export-oriented, USD earnings</td><td>Benefits from rupee depreciation</td></tr>
+                    <tr><td>Banking</td><td>Economy-linked</td><td>Cyclical with economic growth</td></tr>
+                    <tr><td>Pharma</td><td>Defensive, global exposure</td><td>Stable during downturns</td></tr>
+                    <tr><td>FMCG</td><td>Consumption-driven</td><td>Low volatility, consistent</td></tr>
+                    <tr><td>Auto</td><td>Cyclical, discretionary</td><td>Follows economic cycles</td></tr>
+                    <tr><td>Metals</td><td>Commodity-linked</td><td>Volatile with global prices</td></tr>
                 </tbody>
             </table>
 
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <p><strong>Rule of Thumb:</strong> No single sector should be more than 25-30% of your portfolio.</p>
             </div>
 
             <h3>Market Cap Diversification</h3>
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Category</th>
-                        <th style="padding: 12px;">Market Cap</th>
-                        <th style="padding: 12px;">Risk/Return</th>
+                        <th>Category</th>
+                        <th>Market Cap</th>
+                        <th>Risk/Return</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;">Large Cap</td><td style="padding: 12px;">> Rs 20,000 Cr</td><td style="padding: 12px;">Lower risk, stable returns</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">Mid Cap</td><td style="padding: 12px;">Rs 5,000-20,000 Cr</td><td style="padding: 12px;">Moderate risk, growth potential</td></tr>
-                    <tr><td style="padding: 12px;">Small Cap</td><td style="padding: 12px;">< Rs 5,000 Cr</td><td style="padding: 12px;">Higher risk, highest return potential</td></tr>
+                    <tr><td>Large Cap</td><td>> Rs 20,000 Cr</td><td>Lower risk, stable returns</td></tr>
+                    <tr><td>Mid Cap</td><td>Rs 5,000-20,000 Cr</td><td>Moderate risk, growth potential</td></tr>
+                    <tr><td>Small Cap</td><td>< Rs 5,000 Cr</td><td>Higher risk, highest return potential</td></tr>
                 </tbody>
             </table>
             <p>A balanced approach might be: 50% large cap, 30% mid cap, 20% small cap.</p>
@@ -199,7 +207,7 @@
             <h3>3. Ignoring Correlation</h3>
             <p>Some "different" stocks move together. IT and IT services, or PSU banks, tend to move as a group. True diversification requires uncorrelated assets.</p>
 
-            <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="warning-box">
                 <p><strong>Common Mistake:</strong> Buying multiple banking stocks and thinking you're diversified. Sector risk still applies even with different companies.</p>
             </div>
         </section>
@@ -249,23 +257,23 @@
         </section>
 
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin: 0 0 1rem 0;">Check Your Portfolio Diversification</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">See where you can improve your portfolio's risk-adjusted returns.</p>
-            <a href="https://trade.gheware.com/portfolio/insights" class="cta-button" style="background: white; color: #0ea5e9; padding: 14px 32px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; font-size: 1.1rem;">Analyze My Portfolio Free</a>
+        <div class="cta-box">
+            <h3>Check Your Portfolio Diversification</h3>
+            <p>See where you can improve your portfolio's risk-adjusted returns.</p>
+            <a href="https://trade.gheware.com/portfolio/insights" class="cta-button">Analyze My Portfolio Free</a>
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Related Investment Guides</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html" style="color: #0ea5e9;">Portfolio Diversification 101</a></h4>
-                    <p style="margin: 0; color: #64748b;">Complete beginner's guide to diversification strategies.</p>
+        <div class="related-posts">
+            <h3>Related Investment Guides</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/portfolio-diversification-beginners-guide.html">Portfolio Diversification 101</a></h4>
+                    <p>Complete beginner's guide to diversification strategies.</p>
                 </div>
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2026/01/getting-started-with-portfolio-tracking.html" style="color: #0ea5e9;">Getting Started with Portfolio Tracking</a></h4>
-                    <p style="margin: 0; color: #64748b;">Learn how to track your investments effectively.</p>
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2026/01/getting-started-with-portfolio-tracking.html">Getting Started with Portfolio Tracking</a></h4>
+                    <p>Learn how to track your investments effectively.</p>
                 </div>
             </div>
         </div>

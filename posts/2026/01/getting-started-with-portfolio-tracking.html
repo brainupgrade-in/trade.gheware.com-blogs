@@ -14,8 +14,9 @@
     <link rel="canonical" href="https://trade.gheware.com/blog/posts/2026/01/getting-started-with-portfolio-tracking.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=4">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -62,35 +63,42 @@
 <body>
     <!-- Header loaded via template-loader.js -->
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="container">
+    <!-- Article Hero with Background Image -->
+    <section class="article-hero" style="background-image: url('../../../assets/images/getting-started-hero.png');">
+        <div class="container article-hero-content">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="/blog/">Blog</a>
                 <span class="separator">/</span>
                 <a href="/blog/?category=getting-started">Getting Started</a>
             </nav>
             <h1>Getting Started with Portfolio Tracking: A Beginner's Guide</h1>
-            <div class="article-meta">
-                <span class="author">By Rajesh Gheware</span>
-                <span class="separator">|</span>
-                <time datetime="2026-01-13">January 13, 2026</time>
-                <span class="separator">|</span>
-                <span class="read-time">5 min read</span>
+            <div class="article-hero-meta">
+                <div class="article-hero-author">
+                    <img src="../../../images/rajesh-gheware.jpg" alt="Rajesh Gheware">
+                    <div class="article-hero-author-info">
+                        <span class="article-hero-author-name">Rajesh Gheware</span>
+                        <span class="article-hero-author-role">Founder, Trade Gheware</span>
+                    </div>
+                </div>
+                <div class="article-hero-details">
+                    <time datetime="2026-01-13">January 13, 2026</time>
+                    <span class="separator">|</span>
+                    <span class="read-time">5 min read</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <article class="article-content container">
+    <article class="article-content">
         <!-- Key Takeaways Box -->
-        <div class="key-takeaways" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="color: white; margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.75rem;"><strong>Prevent Missed Opportunities:</strong> Portfolio tracking prevents costly mistakes and reduces emotional decisions</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Key Metrics:</strong> Monitor total value, unrealized gains, allocation, and XIRR</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Review Weekly:</strong> Weekly reviews are more effective than daily monitoring for long-term investors</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Smart Alerts:</strong> Use alerts to stay informed without constant checking</li>
+        <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>Prevent Missed Opportunities:</strong> Portfolio tracking prevents costly mistakes and reduces emotional decisions</li>
+                <li><strong>Key Metrics:</strong> Monitor total value, unrealized gains, allocation, and XIRR</li>
+                <li><strong>Review Weekly:</strong> Weekly reviews are more effective than daily monitoring for long-term investors</li>
+                <li><strong>Smart Alerts:</strong> Use alerts to stay informed without constant checking</li>
             </ul>
         </div>
 
@@ -141,7 +149,7 @@
             <h3>4. XIRR (Extended Internal Rate of Return)</h3>
             <p>Unlike simple returns, XIRR accounts for the timing and size of your investments. It's the most accurate measure of your actual investment performance.</p>
 
-            <div class="info-box" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="info-box">
                 <p><strong>Pro Tip:</strong> XIRR is especially important for SIP investors as it accounts for the different dates of each investment, giving you a true picture of your returns.</p>
             </div>
         </section>
@@ -179,7 +187,7 @@
             <h3>Track Your Investment Goals</h3>
             <p>Connect your portfolio to specific financial goals - retirement, children's education, or buying a home. This keeps you motivated and focused on the long term.</p>
 
-            <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+            <div class="warning-box">
                 <p><strong>Important:</strong> Avoid making investment decisions based solely on short-term price movements. Focus on fundamentals and your long-term strategy.</p>
             </div>
         </section>
@@ -194,23 +202,23 @@
         </section>
 
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin: 0 0 1rem 0;">Start Tracking Your Portfolio Today</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Import your holdings, get real-time insights, and take control of your investments.</p>
-            <a href="https://trade.gheware.com/dashboard" class="cta-button" style="background: white; color: #0ea5e9; padding: 14px 32px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; font-size: 1.1rem;">Get Started Free</a>
+        <div class="cta-box">
+            <h3>Start Tracking Your Portfolio Today</h3>
+            <p>Import your holdings, get real-time insights, and take control of your investments.</p>
+            <a href="https://trade.gheware.com/dashboard" class="cta-button">Get Started Free</a>
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Related Investment Guides</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/import-zerodha-portfolio-60-seconds.html" style="color: #0ea5e9;">Import Zerodha Portfolio in 60 Seconds</a></h4>
-                    <p style="margin: 0; color: #64748b;">Connect your broker and import holdings automatically.</p>
+        <div class="related-posts">
+            <h3>Related Investment Guides</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/import-zerodha-portfolio-60-seconds.html">Import Zerodha Portfolio in 60 Seconds</a></h4>
+                    <p>Connect your broker and import holdings automatically.</p>
                 </div>
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html" style="color: #0ea5e9;">Setting Up Smart Alerts</a></h4>
-                    <p style="margin: 0; color: #64748b;">Configure intelligent alerts to stay informed.</p>
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html">Setting Up Smart Alerts</a></h4>
+                    <p>Configure intelligent alerts to stay informed.</p>
                 </div>
             </div>
         </div>

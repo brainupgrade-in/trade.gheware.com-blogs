@@ -14,8 +14,9 @@
     <link rel="canonical" href="https://trade.gheware.com/blog/posts/2025/10/manual-csv-portfolio-import-complete-guide.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../../favicon.svg?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png?v=4">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
@@ -129,36 +130,43 @@
 <body>
     <!-- Header loaded via template-loader.js -->
 
-    <!-- Article Hero -->
-    <section class="article-hero">
-        <div class="container">
+    <!-- Article Hero with Background Image -->
+    <section class="article-hero" style="background-image: url('../../../assets/images/manual-csv-portfolio-import-hero.png');">
+        <div class="container article-hero-content">
             <nav class="breadcrumb" aria-label="Breadcrumb">
                 <a href="/blog/">Blog</a>
                 <span class="separator">/</span>
                 <a href="/blog/?category=tutorials">Tutorials</a>
             </nav>
             <h1>Manual CSV Portfolio Import: Complete Guide for Indian Investors</h1>
-            <div class="article-meta">
-                <span class="author">By Rajesh Gheware</span>
-                <span class="separator">|</span>
-                <time datetime="2025-10-25">October 25, 2025</time>
-                <span class="separator">|</span>
-                <span class="read-time">10 min read</span>
+            <div class="article-hero-meta">
+                <div class="article-hero-author">
+                    <img src="../../../images/rajesh-gheware.jpg" alt="Rajesh Gheware">
+                    <div class="article-hero-author-info">
+                        <span class="article-hero-author-name">Rajesh Gheware</span>
+                        <span class="article-hero-author-role">Founder, Trade Gheware</span>
+                    </div>
+                </div>
+                <div class="article-hero-details">
+                    <time datetime="2025-10-25">October 25, 2025</time>
+                    <span class="separator">|</span>
+                    <span class="read-time">10 min read</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Article Content -->
-    <article class="article-content container">
+    <article class="article-content">
         <!-- Key Takeaways Box (Top) -->
-        <div class="key-takeaways" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="color: white; margin-bottom: 1rem;">Key Takeaways</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.75rem;"><strong>15+ Brokers Supported:</strong> Import from Groww, Upstox, 5paisa, ICICI Direct, Angel One, and more</li>
-                <li style="margin-bottom: 0.75rem;"><strong>9-Field CSV Format:</strong> Simple standardized format with only 4 required fields</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Under 2 Minutes:</strong> Complete import process from export to verification</li>
-                <li style="margin-bottom: 0.75rem;"><strong>100% Validation:</strong> Automatic error detection with specific fix suggestions</li>
-                <li style="margin-bottom: 0.75rem;"><strong>Large Portfolio Support:</strong> Import hundreds of stocks in one batch</li>
+        <div class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>15+ Brokers Supported:</strong> Import from Groww, Upstox, 5paisa, ICICI Direct, Angel One, and more</li>
+                <li><strong>9-Field CSV Format:</strong> Simple standardized format with only 4 required fields</li>
+                <li><strong>Under 2 Minutes:</strong> Complete import process from export to verification</li>
+                <li><strong>100% Validation:</strong> Automatic error detection with specific fix suggestions</li>
+                <li><strong>Large Portfolio Support:</strong> Import hundreds of stocks in one batch</li>
             </ul>
         </div>
 
@@ -187,7 +195,7 @@
             <p><strong>Whether you're switching from Groww, Upstox, 5paisa, or any other broker, Trade Gheware's CSV import feature lets you bring your entire portfolio in minutes.</strong> This comprehensive guide covers everything from exporting data from your current broker to successfully importing it into Trade Gheware.</p>
         </div>
 
-        <div class="info-box" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%); border: none; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+        <div class="info-box">
             <h4>Why Use CSV Import?</h4>
             <ul>
                 <li><strong>Non-Zerodha Users:</strong> Perfect for investors using Groww, Upstox, 5paisa, Angel One, HDFC Securities</li>
@@ -226,25 +234,25 @@ INFY,Infosys Ltd,NSE,EQUITY,75,1450.25,INR,2024-03-10,Long term hold</code></pre
 
             <h3>Field Specifications</h3>
             <div style="overflow-x: auto;">
-                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                    <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                <table>
+                    <thead>
                         <tr>
-                            <th style="padding: 12px; text-align: left;">Field Name</th>
-                            <th style="padding: 12px; text-align: left;">Required</th>
-                            <th style="padding: 12px; text-align: left;">Description</th>
-                            <th style="padding: 12px; text-align: left;">Example</th>
+                            <th>Field Name</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                            <th>Example</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td style="padding: 12px;"><strong>symbol</strong></td><td style="padding: 12px;">Yes</td><td style="padding: 12px;">Stock ticker symbol</td><td style="padding: 12px;">RELIANCE, TCS</td></tr>
-                        <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>companyName</strong></td><td style="padding: 12px;">Yes</td><td style="padding: 12px;">Full company name</td><td style="padding: 12px;">Reliance Industries Ltd</td></tr>
-                        <tr><td style="padding: 12px;"><strong>quantity</strong></td><td style="padding: 12px;">Yes</td><td style="padding: 12px;">Number of shares</td><td style="padding: 12px;">100, 50.5</td></tr>
-                        <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>averagePrice</strong></td><td style="padding: 12px;">Yes</td><td style="padding: 12px;">Average purchase price</td><td style="padding: 12px;">2500.50</td></tr>
-                        <tr><td style="padding: 12px;"><strong>exchange</strong></td><td style="padding: 12px;">Optional</td><td style="padding: 12px;">Stock exchange</td><td style="padding: 12px;">NSE (default), BSE</td></tr>
-                        <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>assetType</strong></td><td style="padding: 12px;">Optional</td><td style="padding: 12px;">Type of asset</td><td style="padding: 12px;">EQUITY (default), ETF</td></tr>
-                        <tr><td style="padding: 12px;"><strong>currency</strong></td><td style="padding: 12px;">Optional</td><td style="padding: 12px;">Currency code</td><td style="padding: 12px;">INR (default)</td></tr>
-                        <tr style="background: #f8fafc;"><td style="padding: 12px;"><strong>purchaseDate</strong></td><td style="padding: 12px;">Optional</td><td style="padding: 12px;">Date (YYYY-MM-DD)</td><td style="padding: 12px;">2024-01-15</td></tr>
-                        <tr><td style="padding: 12px;"><strong>notes</strong></td><td style="padding: 12px;">Optional</td><td style="padding: 12px;">Personal notes</td><td style="padding: 12px;">Long term hold</td></tr>
+                        <tr><td><strong>symbol</strong></td><td>Yes</td><td>Stock ticker symbol</td><td>RELIANCE, TCS</td></tr>
+                        <tr><td><strong>companyName</strong></td><td>Yes</td><td>Full company name</td><td>Reliance Industries Ltd</td></tr>
+                        <tr><td><strong>quantity</strong></td><td>Yes</td><td>Number of shares</td><td>100, 50.5</td></tr>
+                        <tr><td><strong>averagePrice</strong></td><td>Yes</td><td>Average purchase price</td><td>2500.50</td></tr>
+                        <tr><td><strong>exchange</strong></td><td>Optional</td><td>Stock exchange</td><td>NSE (default), BSE</td></tr>
+                        <tr><td><strong>assetType</strong></td><td>Optional</td><td>Type of asset</td><td>EQUITY (default), ETF</td></tr>
+                        <tr><td><strong>currency</strong></td><td>Optional</td><td>Currency code</td><td>INR (default)</td></tr>
+                        <tr><td><strong>purchaseDate</strong></td><td>Optional</td><td>Date (YYYY-MM-DD)</td><td>2024-01-15</td></tr>
+                        <tr><td><strong>notes</strong></td><td>Optional</td><td>Personal notes</td><td>Long term hold</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -365,18 +373,18 @@ INFY,Infosys Ltd,NSE,EQUITY,75,1450.25,INR,2024-03-10,Long term hold</code></pre
         <!-- Section: Special Characters -->
         <section id="special-characters">
             <h2>Handling Special Characters</h2>
-            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
-                <thead style="background: #1a1a2e; color: white;">
+            <table>
+                <thead>
                     <tr>
-                        <th style="padding: 12px;">Issue</th>
-                        <th style="padding: 12px;">Example</th>
-                        <th style="padding: 12px;">Solution</th>
+                        <th>Issue</th>
+                        <th>Example</th>
+                        <th>Solution</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="padding: 12px;">Ampersand (&)</td><td style="padding: 12px;">L&T, M&M</td><td style="padding: 12px;">Keep as is - Trade Gheware handles it</td></tr>
-                    <tr style="background: #f8fafc;"><td style="padding: 12px;">Commas in name</td><td style="padding: 12px;">ABC Ltd, Mumbai</td><td style="padding: 12px;">Enclose in double quotes</td></tr>
-                    <tr><td style="padding: 12px;">Unicode characters</td><td style="padding: 12px;">Special symbols</td><td style="padding: 12px;">Save CSV with UTF-8 encoding</td></tr>
+                    <tr><td>Ampersand (&)</td><td>L&T, M&M</td><td>Keep as is - Trade Gheware handles it</td></tr>
+                    <tr><td>Commas in name</td><td>ABC Ltd, Mumbai</td><td>Enclose in double quotes</td></tr>
+                    <tr><td>Unicode characters</td><td>Special symbols</td><td>Save CSV with UTF-8 encoding</td></tr>
                 </tbody>
             </table>
         </section>
@@ -409,24 +417,24 @@ INFY,Infosys Ltd,NSE,EQUITY,75,1450.25,INR,2024-03-10,Long term hold</code></pre
         </section>
 
         <!-- CTA Box -->
-        <div class="cta-box" style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); color: white; padding: 2.5rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-            <h3 style="color: white; font-size: 2rem; margin: 0 0 1rem 0;">Ready to Import Your Portfolio?</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Join 25,000+ investors managing portfolios on Trade Gheware</p>
-            <a href="https://trade.gheware.com/dashboard" class="cta-button" style="background: white; color: #0ea5e9; padding: 14px 32px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: bold; font-size: 1.1rem;">Import Portfolio Free</a>
-            <p class="cta-subtext" style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">No credit card required | Import from any broker</p>
+        <div class="cta-box">
+            <h3>Ready to Import Your Portfolio?</h3>
+            <p>Join 25,000+ investors managing portfolios on Trade Gheware</p>
+            <a href="https://trade.gheware.com/dashboard" class="cta-button">Import Portfolio Free</a>
+            <p class="cta-subtext">No credit card required | Import from any broker</p>
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" style="margin-top: 3rem;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Related Investment Guides</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/import-zerodha-portfolio-60-seconds.html" style="color: #0ea5e9;">Import Zerodha Portfolio in 60 Seconds</a></h4>
-                    <p style="margin: 0; color: #64748b;">Step-by-step guide to importing your Zerodha holdings with OAuth integration.</p>
+        <div class="related-posts">
+            <h3>Related Investment Guides</h3>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/import-zerodha-portfolio-60-seconds.html">Import Zerodha Portfolio in 60 Seconds</a></h4>
+                    <p>Step-by-step guide to importing your Zerodha holdings with OAuth integration.</p>
                 </div>
-                <div style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem 0;"><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html" style="color: #0ea5e9;">Setting Up Smart Alerts</a></h4>
-                    <p style="margin: 0; color: #64748b;">Configure intelligent alerts for your imported portfolio with AI-powered monitoring.</p>
+                <div class="related-post-card">
+                    <h4><a href="/blog/posts/2025/10/setting-up-smart-alerts-complete-guide.html">Setting Up Smart Alerts</a></h4>
+                    <p>Configure intelligent alerts for your imported portfolio with AI-powered monitoring.</p>
                 </div>
             </div>
         </div>
