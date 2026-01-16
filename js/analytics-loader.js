@@ -10,8 +10,8 @@
 (function() {
   'use strict';
 
-  // Google Analytics 4 (GA4) Measurement ID for www.gheware.com
-  const GA_MEASUREMENT_ID = 'G-2P4SEV0MH2';
+  // Google Analytics 4 (GA4) Measurement ID for trade.gheware.com
+  const GA_MEASUREMENT_ID = 'G-GGGDDKQTZF';
 
   // Skip loading if Measurement ID not configured
   if (GA_MEASUREMENT_ID === 'GA_MEASUREMENT_ID') {
