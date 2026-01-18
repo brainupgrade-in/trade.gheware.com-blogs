@@ -183,9 +183,21 @@
 
     <!-- Blog Posts Grid -->
     <section class="container" style="margin-top: 1rem;">
+        <!-- Top Pagination (compact) -->
+        <div id="paginationContainerTop" class="pagination-container" style="display: none; justify-content: flex-end; align-items: center; margin-bottom: 0.75rem; gap: 1rem;">
+            <div id="paginationInfoTop" class="pagination-info" style="color: #94a3b8; font-size: 0.8rem;"></div>
+            <div id="paginationTop" class="pagination" style="display: flex; gap: 0.25rem; align-items: center;"></div>
+        </div>
+
         <div class="blog-grid" id="blogGrid">
             <!-- Loading spinner shown initially -->
             <div class="loading-spinner"></div>
+        </div>
+
+        <!-- Bottom Pagination (compact) -->
+        <div id="paginationContainer" class="pagination-container" style="display: none; justify-content: center; align-items: center; margin-top: 1.5rem; gap: 1rem;">
+            <div id="paginationInfo" class="pagination-info" style="color: #94a3b8; font-size: 0.8rem;"></div>
+            <div id="pagination" class="pagination" style="display: flex; gap: 0.25rem; align-items: center;"></div>
         </div>
     </section>
 
