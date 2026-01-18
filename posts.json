@@ -2,6 +2,18 @@
   "posts": [
     {
       "id": 0,
+      "slug": "2026/01/bonds-debt-instruments-safe-haven-india.html",
+      "title": "Bonds & Debt: The 'Boring' Investment That Saved Portfolios in 2020",
+      "excerpt": "G-Secs yielding 6.7%, RBI bonds at 8.05%, 60:40 portfolios delivering 13.5% CAGR with 32% less pain. Franklin Templeton crisis lessons and 2023 tax changes explained.",
+      "category": "investment-basics",
+      "categoryLabel": "Investment Basics",
+      "image": "assets/images/bonds-debt-instruments-safe-haven-india-hero.jpg",
+      "date": "January 18, 2026",
+      "readTime": "19 min read",
+      "featured": true
+    },
+    {
+      "id": 1,
       "slug": "2026/01/dividend-investing-passive-income-india.html",
       "title": "Dividend Investing: How to Earn Rs 5,000/Month Without Selling Stocks",
       "excerpt": "Build Rs 5,000/month passive income from dividends. Top stocks: Vedanta (7.14%), Coal India (6.33%), ITC (4.25%). Learn dividend yield formula, DRIP strategy, and 2026 tax rules.",
