@@ -2,6 +2,18 @@
   "posts": [
     {
       "id": 0,
+      "slug": "2026/01/dividend-investing-passive-income-india.html",
+      "title": "Dividend Investing: How to Earn Rs 5,000/Month Without Selling Stocks",
+      "excerpt": "Build Rs 5,000/month passive income from dividends. Top stocks: Vedanta (7.14%), Coal India (6.33%), ITC (4.25%). Learn dividend yield formula, DRIP strategy, and 2026 tax rules.",
+      "category": "investment-basics",
+      "categoryLabel": "Investment Basics",
+      "image": "assets/images/dividend-investing-passive-income-india-hero.jpg",
+      "date": "January 18, 2026",
+      "readTime": "21 min read",
+      "featured": true
+    },
+    {
+      "id": 1,
       "slug": "2026/01/large-cap-vs-mid-cap-vs-small-cap-explained.html",
       "title": "Small Caps Crashed 80%: What Nobody Warned You About (2026)",
       "excerpt": "Small caps gave 47% returns in 2023, then crashed 60-80% in 2025. Learn SEBI definitions, crash recovery data (large caps 2.5 yrs vs small caps 5+ yrs), and age-based allocation strategy.",
