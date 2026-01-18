@@ -2,6 +2,30 @@
   "posts": [
     {
       "id": 0,
+      "slug": "2026/01/large-cap-vs-mid-cap-vs-small-cap-explained.html",
+      "title": "Small Caps Crashed 80%: What Nobody Warned You About (2026)",
+      "excerpt": "Small caps gave 47% returns in 2023, then crashed 60-80% in 2025. Learn SEBI definitions, crash recovery data (large caps 2.5 yrs vs small caps 5+ yrs), and age-based allocation strategy.",
+      "category": "investment-basics",
+      "categoryLabel": "Investment Basics",
+      "image": "assets/images/large-cap-vs-mid-cap-vs-small-cap-explained-hero.jpg",
+      "date": "January 18, 2026",
+      "readTime": "19 min read",
+      "featured": true
+    },
+    {
+      "id": 1,
+      "slug": "2026/01/mutual-funds-active-vs-passive-exposed.html",
+      "title": "EXPOSED: 73% of Fund Managers Can't Beat This Simple Strategy (2026)",
+      "excerpt": "SPIVA India reveals 73-90% of active funds underperform index. Learn expense ratio impact (1.5% vs 0.2% = Rs 1.5 Cr difference), direct vs regular plans, and when active makes sense.",
+      "category": "investment-basics",
+      "categoryLabel": "Investment Basics",
+      "image": "assets/images/mutual-funds-active-vs-passive-exposed-hero.jpg",
+      "date": "January 18, 2026",
+      "readTime": "18 min read",
+      "featured": true
+    },
+    {
+      "id": 2,
       "slug": "2026/01/index-funds-etfs-low-cost-wealth-building.html",
       "title": "Index Funds vs ETFs: Beat 80% of Fund Managers (2026)",
       "excerpt": "73% of fund managers FAIL to beat index funds. Start with Rs 500, expense ratio 0.02% vs 2%. Compare top Nifty 50 index funds and ETFs for 2026. Step-by-step guide.",
