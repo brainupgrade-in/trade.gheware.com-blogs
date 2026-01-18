@@ -1,0 +1,8 @@
+# Robots.txt for Trade Gheware Blog
+# https://trade.gheware.com/blog/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://trade.gheware.com/blog/sitemap.xml
