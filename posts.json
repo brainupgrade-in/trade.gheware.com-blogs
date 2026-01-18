@@ -2,6 +2,18 @@
   "posts": [
     {
       "id": 0,
+      "slug": "2026/01/index-funds-etfs-low-cost-wealth-building.html",
+      "title": "Index Funds vs ETFs: Beat 80% of Fund Managers (2026)",
+      "excerpt": "73% of fund managers FAIL to beat index funds. Start with Rs 500, expense ratio 0.02% vs 2%. Compare top Nifty 50 index funds and ETFs for 2026. Step-by-step guide.",
+      "category": "investment-basics",
+      "categoryLabel": "Investment Basics",
+      "image": "assets/images/index-funds-etfs-low-cost-wealth-building-hero.jpg",
+      "date": "January 18, 2026",
+      "readTime": "20 min read",
+      "featured": true
+    },
+    {
+      "id": 1,
       "slug": "2026/01/fd-vs-equity-16-lakh-difference.html",
       "title": "FD vs Equity: Your Parents' Advice Cost You Rs 16 Lakhs (2026)",
       "excerpt": "Rs 5 Lakh in FD becomes Rs 13 Lakh while equity reaches Rs 26 Lakh in 15 years. Learn when FD makes sense, why 91% Indians choose wrong, and the exact tax math.",
@@ -13,7 +25,7 @@
       "featured": true
     },
     {
-      "id": 1,
+      "id": 2,
       "slug": "2026/01/understanding-inflation-silent-wealth-killer.html",
       "title": "WARNING: Your FD is Losing Money Every Year (2026)",
       "excerpt": "Your Rs 1 lakh FD loses Rs 3,000 yearly to inflation. Learn the real return formula, why Rs 1 Cr becomes Rs 25 Lakhs in 20 years, and 5 inflation-beating investments.",
@@ -25,7 +37,7 @@
       "featured": true
     },
     {
-      "id": 2,
+      "id": 3,
       "slug": "2026/01/power-of-compounding-1-crore-formula.html",
       "title": "STOP Waiting: The Rs 1 Crore Compounding Formula (2026)",
       "excerpt": "Rs 10,000/month to Rs 1 crore in 20 years. Learn the Rule of 72, why starting at 25 vs 35 creates Rs 2.30 crore difference, and the exact SIP formula that works.",
@@ -37,7 +49,7 @@
       "featured": true
     },
     {
-      "id": 3,
+      "id": 4,
       "slug": "2026/01/portfolio-diversification-basics.html",
       "title": "Stop Losing Money: The Diversification Mistake 75% of Indians Make",
       "excerpt": "Reduce portfolio risk by 40% with proper diversification. Learn the 5/25 Rule, Rule of 100, and why NIFTY 50's 36.84% banking concentration is quietly putting your wealth at risk.",
@@ -49,7 +61,7 @@
       "featured": true
     },
     {
-      "id": 4,
+      "id": 5,
       "slug": "2026/01/understanding-risk-and-return.html",
       "title": "Understanding Risk and Return: The Truth 90% of Indians Don't Know (2026)",
       "excerpt": "Learn why 90.5% of Indians avoid stock markets and miss Rs 16.5 lakh wealth creation. Discover systematic vs unsystematic risk, equity vs FD returns, and how to assess your risk tolerance.",
@@ -61,7 +73,7 @@
       "featured": true
     },
     {
-      "id": 5,
+      "id": 6,
       "slug": "2026/01/getting-started-with-portfolio-tracking.html",
       "title": "Getting Started with Portfolio Tracking: A Beginner's Guide",
       "excerpt": "Learn how to effectively track your investment portfolio, understand key metrics, and make data-driven decisions for better returns.",
@@ -73,7 +85,7 @@
       "featured": true
     },
     {
-      "id": 6,
+      "id": 7,
       "slug": "2026/01/ai-powered-stock-discovery.html",
       "title": "How AI is Revolutionizing Stock Discovery for Indian Investors",
       "excerpt": "Discover how artificial intelligence helps identify investment opportunities in the Indian stock market with personalized recommendations.",
@@ -85,7 +97,7 @@
       "featured": true
     },
     {
-      "id": 7,
+      "id": 8,
       "slug": "2026/01/understanding-portfolio-diversification.html",
       "title": "Understanding Portfolio Diversification: Why It Matters",
       "excerpt": "A comprehensive guide to portfolio diversification strategies and how to reduce risk while maximizing returns in the Indian market.",
@@ -97,7 +109,7 @@
       "featured": true
     },
     {
-      "id": 8,
+      "id": 9,
       "slug": "2025/12/introduction-to-investing-why-start-now.html",
       "title": "Introduction to Investing: Why Start Now in 2025",
       "excerpt": "Learn why starting your investment journey now is crucial for building long-term wealth. Understand the power of compounding and how to overcome common barriers.",
@@ -109,7 +121,7 @@
       "featured": false
     },
     {
-      "id": 9,
+      "id": 10,
       "slug": "2025/10/import-zerodha-portfolio-60-seconds.html",
       "title": "Import Zerodha Portfolio in 60 Seconds: Complete Guide 2025",
       "excerpt": "Step-by-step guide to import your Zerodha portfolio instantly using OAuth integration. Track 100+ stocks, analyze performance, and get AI insights in under 1 minute.",
@@ -121,7 +133,7 @@
       "featured": false
     },
     {
-      "id": 10,
+      "id": 11,
       "slug": "2025/10/manual-csv-portfolio-import-complete-guide.html",
       "title": "Manual CSV Portfolio Import: Complete Guide for Indian Investors",
       "excerpt": "Import your stock portfolio from Groww, Upstox, 5paisa to Trade Gheware using CSV. Step-by-step guide with broker-specific templates and validation rules.",
@@ -133,7 +145,7 @@
       "featured": false
     },
     {
-      "id": 11,
+      "id": 12,
       "slug": "2025/10/setting-up-smart-alerts-complete-guide.html",
       "title": "Setting Up Smart Alerts: Complete Guide to Portfolio Risk Monitoring",
       "excerpt": "Learn how to set up AI-powered smart alerts for price changes, P&L thresholds, and sector concentration to protect your portfolio from unexpected risks.",
@@ -145,7 +157,7 @@
       "featured": false
     },
     {
-      "id": 12,
+      "id": 13,
       "slug": "2025/10/ai-stock-discovery-find-your-next-investment.html",
       "title": "AI Stock Discovery: Find Your Next Investment in 2025",
       "excerpt": "Discover how AI analyzes 5000+ NSE/BSE stocks using collaborative filtering, sentiment analysis, and fundamental analysis to find opportunities matching your goals.",
@@ -157,7 +169,7 @@
       "featured": false
     },
     {
-      "id": 13,
+      "id": 14,
       "slug": "2025/10/portfolio-diversification-beginners-guide.html",
       "title": "Portfolio Diversification 101: Complete Beginner's Guide for Indian Investors",
       "excerpt": "Master portfolio diversification with proven strategies that reduce risk by 40%. Includes sector allocation, asset class balance, and practical NSE/BSE examples.",
@@ -170,14 +182,46 @@
     }
   ],
   "categories": [
-    { "id": "investment-basics", "label": "Investment Basics", "icon": "" },
-    { "id": "risk-management", "label": "Risk Management", "icon": "" },
-    { "id": "tutorials", "label": "Tutorials", "icon": "" },
-    { "id": "getting-started", "label": "Getting Started", "icon": "" },
-    { "id": "ai-technology", "label": "AI & Technology", "icon": "" },
-    { "id": "investment-strategy", "label": "Investment Strategy", "icon": "" },
-    { "id": "market-analysis", "label": "Market Analysis", "icon": "" },
-    { "id": "product-updates", "label": "Product Updates", "icon": "" }
+    {
+      "id": "investment-basics",
+      "label": "Investment Basics",
+      "icon": ""
+    },
+    {
+      "id": "risk-management",
+      "label": "Risk Management",
+      "icon": ""
+    },
+    {
+      "id": "tutorials",
+      "label": "Tutorials",
+      "icon": ""
+    },
+    {
+      "id": "getting-started",
+      "label": "Getting Started",
+      "icon": ""
+    },
+    {
+      "id": "ai-technology",
+      "label": "AI & Technology",
+      "icon": ""
+    },
+    {
+      "id": "investment-strategy",
+      "label": "Investment Strategy",
+      "icon": ""
+    },
+    {
+      "id": "market-analysis",
+      "label": "Market Analysis",
+      "icon": ""
+    },
+    {
+      "id": "product-updates",
+      "label": "Product Updates",
+      "icon": ""
+    }
   ],
   "postsPerPage": 12
 }
